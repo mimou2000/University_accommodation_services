@@ -1,0 +1,450 @@
+
+.panel_main{
+    -fx-background-color: linear-gradient(to bottom right, #141E30, #243B55);
+    -fx-background-size: 800 500;
+    -fx-background-radius: 11.5px;
+    -fx-border-radius: 11.5px;
+    -fx-end-margin: 0px ;
+
+}
+.scene_secende{
+    -fx-background-color: linear-gradient(to bottom right, #141E30, #243B55);
+}
+.text-field{
+    -fx-background-color:transparent;
+    -fx-border-color: #0093DD;
+    -fx-border-width:0px 0px 3px 0px;
+    -fx-padding:3px 3px 3px 25px ;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+   -fx-text-inner-color:#fff;
+    -fx-effect: none;
+
+}
+.button{
+    -fx-background-color: #0093DD;
+    -fx-cursor: hand;
+}
+.button:hover{
+    -fx-background-color:#5aa0ea;
+}
+.hyperlink{
+    -fx-text-fill:#2c6eb5 ;
+}
+.exit {
+-fx-background-color: transparent;
+    -fx-background-radius:0px  11.5px 0px 0px;
+    -fx-border-radius: 20px;
+    -fx-cursor: hand;
+}
+.exit:hover{
+    -fx-background-color: red;
+}
+
+.Amt{
+    -fx-text-fill:#141e30;
+}
+.pane{
+    -fx-border-color: #0093DD;
+    -fx-border-width:0px 3px 0px 0px;
+}
+.dialoge_forgetPassword {
+    -fx-background-color: linear-gradient(to bottom right, #141E30, #243B55);
+    -fx-background-radius: 0px 0px 11.5px 11.5px;
+    -fx-border-radius: 11.5px;
+
+}
+.bordertop {
+    -fx-background-color:#0093DD;
+    -fx-background-radius: 11.5px 11.5px  0px 0px;
+    -fx-border-radius:11.5px 11.5px 0px 0px ;
+    -fx-border-color: linear-gradient(to bottom right, #141E30, #243B55); ;
+
+}
+.exit_dialoge {
+    -fx-background-color:red;
+    -fx-background-radius:20px  20px 20px 20px;
+    -fx-border-radius: 20px;
+    -fx-cursor: hand;
+}
+.exit_dialoge:hover{
+    -fx-background-color: #cc4545;
+}
+.button_password_hide_and_show{
+    -fx-background-color:  transparent;
+}
+.button_password_hide_and_show:hover{
+    -fx-background-color:  transparent;
+}
+
+.VBOX_Pane{
+    -fx-background-color: linear-gradient(to bottom right, #141E30, #243B55);
+    -fx-background-radius: 0px 0px 11.5px 0px;
+    -fx-border-radius: 11.5px;
+    -fx-end-margin: 0px ;
+
+}
+.label_element{-fx-text-fill: white;}
+.label_element:hover{
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-background-radius:0px  11.5px 11.5px 0px;
+}
+.center_pane{
+    -fx-background-color: white;
+    -fx-background-radius: 0px 0px 0px 11.5px;
+    -fx-border-radius: 0px 0px 0px 11.5px; ;
+
+}
+.BorderPane{
+    -fx-background-color: transparent;
+    -fx-background-radius: 11.5px;
+    -fx-border-radius: 11.5px; ;
+    -fx-border-width: 2px ;
+}
+.BorderPane > .viewport {
+    -fx-background-color: transparent;
+}
+.label_element:pressed{
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-background-radius:0px  11.5px 11.5px 0px;
+}
+.table-view {
+    -fx-border-color: linear-gradient(to bottom right, #141E30, #243B55);
+    -fx-background-radius: 11.5px;
+    -fx-border-radius: 11.5px;
+    -fx-border-color:linear-gradient(to bottom right, #141E30, #243B55) ;
+}
+
+
+.table-view .column-header-background {
+    -fx-background-color: linear-gradient(to bottom right, #141E30, #243B55);
+    -fx-background-radius: 11.5px 11.5px 0 0;
+    -fx-border-radius: 11.5px 11.5px;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+    -fx-background-size: 50px;
+
+}
+.table-view .column-header .label {
+    -fx-text-fill: #fff;
+}
+
+.table-view .filler {
+    -fx-background-color: transparent;
+    -fx-background-size: 50px;
+    -fx-fill: linear-gradient(to bottom right, #141E30, #243B55);
+    -fx-padding: 0px;
+}
+
+.scroll-pane{
+
+        -fx-border-color:transparent;
+    -fx-border-radius: 11.5px;
+-fx-background-color:transparent ;
+        -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0, 0, 5); /* تأثير الظل */
+
+}
+.tab-pane{
+    -fx-border-radius: 0px  ;
+    -fx-border-color:linear-gradient(to bottom right, #141E30, #243B55); ;
+}
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-background-color: linear-gradient(to bottom right, #141E30, #243B55);
+    -fx-border-width: 1px 1px 1px 0px;
+
+}
+
+.tab-pane .tab {
+    -fx-background-color: transparent;
+    -fx-font-weight: bold;
+    -fx-text-fill: #fff;
+    -fx-alignment: center;
+
+}
+.tab-pane .tab-label {
+    -fx-text-fill: #fff;
+    -fx-alignment: center;
+
+}
+.tab-pane .tab:selected {
+    -fx-background-color: #243B55;
+}
+.tab {
+    -fx-pref-width: 100px;
+}
+.text_search {
+    -fx-border-radius: 7px;
+    -fx-border-color: linear-gradient(to bottom right, #141E30, #243B55);
+    -fx-border-width: 1px; /* تم إزالة المسافة الزائدة هنا */
+    -fx-text-fill: linear-gradient(to bottom right, #141E30, #243B55);
+    -fx-fill: linear-gradient(to bottom right, #141E30, #243B55);
+    -fx-effect: none;
+}
+
+
+.button_work{
+    -fx-background-color:linear-gradient(to bottom right, #141E30, #243B55);
+    -fx-text-fill: white;
+
+}
+.label_data_base{
+    -fx-border-width:  0px 1px 0px 0px;
+    -fx-border-color: linear-gradient(to bottom right, #141E30, #243B55);
+}
+.botton_update{
+    -fx-border-width:  0px 1px 0px 0px;
+    -fx-border-color: linear-gradient(to bottom right, #141E30, #243B55);
+    -fx-background-color: white;
+    -fx-text-fill:linear-gradient(to bottom right, #141E30, #243B55) ;
+}
+.botton_update:hover{
+    -fx-background-color: rgb(85, 255, 85);
+}
+.AnchorPane{
+
+    -fx-background-radius: 11.5px;
+    -fx-border-radius: 11.5px;
+    -fx-border-color:linear-gradient(to bottom right, #141E30, #243B55) ;
+    -fx-background-color: white;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0, 0, 5);
+}
+.label_photo{
+    -fx-border-radius: 11.5px;
+    -fx-border-color:transparent;
+    -fx-background-radius: 11.5px;
+    -fx-background-color: white;
+}
+
+.button_search{
+    -fx-background-color: transparent;
+    -fx-border-color:transparent ;
+
+}
+.button_search:hover{
+    -fx-background-color: transparent;
+    -fx-border-color:transparent ;
+}
+.DatePicker{
+    -fx-background-color: transparent;
+    -fx-border-color:transparent ;
+
+}
+.text_label{
+    -fx-background-radius: 7px;
+    -fx-border-radius: 7px;
+    -fx-border-color:linear-gradient(to bottom right, #141E30, #243B55);
+    -fx-border-width: 1px;
+    -fx-text-fill:#807a7a;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-fill: linear-gradient(to bottom right, #141E30, #243B55);
+    -fx-effect: none;
+}
+.text_label_combobox{
+    -fx-background-radius: 7px;
+    -fx-border-radius: 7px;
+    -fx-border-color:linear-gradient(to bottom right, #141E30, #243B55);
+    -fx-border-width: 1px;
+    -fx-text-fill:#807a7a;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-fill: linear-gradient(to bottom right, #141E30, #243B55);
+    -fx-effect: none;
+}
+.label_element_table{
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-background-radius:0px  11.5px 11.5px 0px;
+}
+.user_name1{
+    -fx-font-size: 19 px;
+    -fx-text-fill: white;
+    -fx-alignment: center;
+
+}
+.button_min{
+    -fx-background-radius: 0px;
+    -fx-background-color: #0093DD;
+    -fx-cursor: hand;
+}
+.button_min:hover{
+    -fx-background-color:#5aa0ea;
+}
+.AnchorPane2{
+
+
+    -fx-border-radius: 0px;
+    -fx-border-color:transparent;
+    -fx-background-color: white;
+    -fx-background-radius:0px  0px 0px 11.5px;
+}
+.AnchorPane3{
+    -fx-background-radius: 0px;
+    -fx-border-radius: 0px;
+    -fx-border-color:transparent;
+    -fx-background-color: white;
+
+    -fx-effect: none;}
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+.AnchorPane4{
+    -fx-border-radius: 12px;
+    -fx-border-color:linear-gradient(to bottom right, #141E30, #243B55);
+    -fx-background-color: white;
+    -fx-background-radius:12px;
+
+}
+.AnchorPane5{
+    -fx-border-radius: 12px;
+    -fx-border-color:transparent;
+    -fx-background-color: transparent;
+    -fx-background-radius:12px;
+
+}
+.Rectangle{
+    -fx-arc-height: 23px;
+    -fx-arc-width:23px;
+}
+.table-view .scroll-bar:vertical {
+    -fx-background-color: transparent; /* لجعل الخلفية شفافة */
+}
+
+.table-view .scroll-bar:vertical .thumb {
+    -fx-background-color: #808080; /* لتغيير لون شريط الإبهام */
+    -fx-background-radius: 5px; /* لتقويس زوايا شريط الإبهام */
+}
+
+.table-view .scroll-bar:vertical .thumb:hover {
+    -fx-background-color: #606060; /* لتغيير لون شريط الإبهام عند تمرير المؤشر عليه */
+}
+
+.table-view .scroll-bar:vertical .thumb:pressed {
+    -fx-background-color: #404040; /* لتغيير لون شريط الإبهام عند الضغط عليه */
+}
+
+.table-view .scroll-bar:vertical {
+    -fx-background-insets: 0;
+}
+.combo-box.text {
+    -fx-text-fill: gray;
+    -fx-text-base-color:white;
+}
+.root {
+    -fx-text-base-color: #000000; /* Define a base color */
+}
+
+/* Example style for combo box cells */
+.combo-box > .list-cell {
+    -fx-text-fill:  #000000; /* Use the base color */
+}
+
+.context-menu {
+    -fx-background-color: #FFFFFF;
+    -fx-effect: null;
+    -fx-border-color: #D6D9DF;
+    -fx-border-width: 0.5;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+    -fx-background-insets: 0, 1;
+}
+
+.menu-item {
+    -fx-padding: 0px;
+    -fx-pref-height: 28px;
+}
+
+.context-menu .separator {
+    -fx-padding: 0px;
+}
+
+.menu-item .label {
+    -fx-font-size: 12px;
+    -fx-padding: 6px 16px 8px 12px;
+    -fx-text-fill: #2D3845;
+}
+
+.menu-item:focused {
+    -fx-background-color: transparent;
+}
+
+.menu-item:hover {
+    -fx-background-color:#EAECEF;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+}
+
+.menu-item:pressed  {
+    -fx-background-color: #0093DD;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+}
+.show_in_Stud_Center{
+    -fx-background-radius: 11.5px;
+    -fx-border-radius: 11.5px;
+
+   -fx-background-color:  white;
+    -fx-border-color:linear-gradient(to bottom right, #141E30, #243B55);
+}
+
+.show_in_Stud_center2{
+    fx-background-radius:  0px 0px 11.5px 11.5px;
+    -fx-border-radius: 0px 0px 11.5px 11.5px;
+     -fx-background-color: white;
+    -fx-border-color:linear-gradient(to bottom right, #141E30, #243B55);
+    -fx-fill: transparent;
+}
+.admin{
+    -fx-background-color:  transparent;
+    -fx-border-color:linear-gradient(to bottom right, #141E30, #243B55);
+-fx-border-width: 1px 1px 0px 1px;
+
+}
+.admin:hover{
+    -fx-background-color:  rgb(85, 255, 85);
+    -fx-border-color:linear-gradient(to bottom right, #141E30, #243B55);
+
+}
+.combo_user{
+    -fx-background-color:#0093DD;
+    -fx-border-color: #0093DD;
+    -fx-border-width:0px 0px 0px 0px;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-text-inner-color:#ffff;
+    -fx-effect: none;
+}
+.text_label_sud_wor{
+    -fx-background-radius: 7px;
+    -fx-border-radius: 7px;
+    -fx-border-color:linear-gradient(to bottom right, #141E30, #243B55);
+    -fx-border-width: 1px;
+    -fx-text-fill:black;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-fill: linear-gradient(to bottom right, #141E30, #243B55);
+    -fx-effect: none;
+}
+.bordertop1 {
+    -fx-background-color:#0093DD;
+    -fx-background-radius: 11.5px 11.5px  0px 0px;
+    -fx-border-radius:11.5px 11.5px 0px 0px ;
+    -fx-border-color:linear-gradient(to bottom right, #141E30, #243B55);
+    -fx-border-width: 0.5px;
+}
+.text_label_ex{
+    -fx-background-radius: 7px;
+    -fx-border-radius: 7px;
+    -fx-border-color:linear-gradient(to bottom right, #141E30, #243B55);
+    -fx-border-width: 1px;
+    -fx-text-fill:black;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-fill: linear-gradient(to bottom right, #141E30, #243B55);
+    -fx-effect: none;
+}

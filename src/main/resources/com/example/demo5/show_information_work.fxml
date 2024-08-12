@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="555.0" prefWidth="378.0" styleClass="show_in_Stud_Center" stylesheets="@application_design.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo5.show_information_work_controller">
+   <center>
+      <AnchorPane prefHeight="494.0" prefWidth="505.0" styleClass="show_in_Stud_center2" stylesheets="@application_design.css">
+         <children>
+            <AnchorPane layoutX="138.0" layoutY="14.0" prefHeight="100.0" prefWidth="100.0">
+               <children>
+                  <Rectangle fx:id="clep" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="129.0" stroke="BLACK" strokeType="INSIDE" styleClass="Rectangle" width="114.0" />
+               </children>
+            </AnchorPane>
+            <Label fx:id="ID_Nat_Work" alignment="CENTER_RIGHT" contentDisplay="TOP" layoutX="105.0" layoutY="149.0" prefHeight="30.0" prefWidth="183.0" styleClass="text_label" text="رقم التعريف" />
+            <Label fx:id="name" alignment="CENTER_RIGHT" contentDisplay="TOP" layoutX="105.0" layoutY="185.0" prefHeight="30.0" prefWidth="183.0" styleClass="text_label" text="الاسم" />
+            <Label fx:id="last_name" alignment="CENTER_RIGHT" contentDisplay="TOP" layoutX="105.0" layoutY="222.0" prefHeight="30.0" prefWidth="183.0" styleClass="text_label" text="اللقب" />
+            <Label fx:id="date_of_birth" alignment="CENTER_RIGHT" contentDisplay="TOP" layoutX="105.0" layoutY="260.0" prefHeight="30.0" prefWidth="183.0" styleClass="text_label" text="تاريخ الميلاد" />
+            <Label fx:id="plasse_of_birth" alignment="CENTER_RIGHT" contentDisplay="TOP" layoutX="105.0" layoutY="299.0" prefHeight="30.0" prefWidth="183.0" styleClass="text_label" text="مكان الميلاد" />
+            <Label fx:id="addres" alignment="CENTER_RIGHT" contentDisplay="TOP" layoutX="105.0" layoutY="378.0" prefHeight="30.0" prefWidth="183.0" styleClass="text_label" text="مكان السكن" />
+            <Label fx:id="nat" alignment="CENTER_RIGHT" contentDisplay="TOP" layoutX="105.0" layoutY="417.0" prefHeight="30.0" prefWidth="183.0" styleClass="text_label" text="الجنسية" />
+            <Label fx:id="room" alignment="CENTER_RIGHT" contentDisplay="TOP" layoutX="105.0" layoutY="460.0" prefHeight="30.0" prefWidth="183.0" styleClass="text_label" text="رقم الغرفة" />
+            <Label fx:id="state" alignment="CENTER_RIGHT" contentDisplay="TOP" layoutX="105.0" layoutY="338.0" prefHeight="30.0" prefWidth="183.0" styleClass="text_label" text="الولاية" />
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <AnchorPane prefHeight="32.0" prefWidth="408.0" styleClass="bordertop1" stylesheets="@application_design.css" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="23.0" fitWidth="28.0" layoutX="7.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@UAS.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="42.0" layoutY="5.0" text="University Accommodation Service" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="456.0" onMouseClicked="#mouseclick" prefHeight="32.0" prefWidth="47.0" styleClass="exit" text="x" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

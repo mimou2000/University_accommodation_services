@@ -1,0 +1,922 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="home_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1050.0" styleClass="AnchorPane4" stylesheets="@application_design.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo5.HomePage2_controller">
+   <right>
+      <VBox prefHeight="570.0" prefWidth="170.0" styleClass="VBOX_Pane" stylesheets="@application_design.css" BorderPane.alignment="CENTER">
+         <children>
+            <Label />
+            <Label alignment="CENTER" prefHeight="79.0" prefWidth="171.0">
+               <graphic>
+                  <ImageView fitHeight="79.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@male_user_96px.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label fx:id="username1" alignment="TOP_RIGHT" prefHeight="43.0" prefWidth="193.0" styleClass="user_name1" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="button_table_resid" alignment="CENTER_RIGHT" contentDisplay="RIGHT" onMouseClicked="#handleButtonClick" onMousePressed="#handleButtonClick" prefHeight="52.0" prefWidth="152.0" styleClass="label_element_table" stylesheets="@application_design.css" text="جدول المقيمين" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="39.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@grid_view_96px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label fx:id="button_archives_resid" alignment="CENTER_RIGHT" contentDisplay="RIGHT" onMouseClicked="#handleButtonClick" onMousePressed="#handleButtonClick" prefHeight="52.0" prefWidth="152.0" styleClass="label_element" text="أرشيف التبرئة" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="39.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons8_archive.png_64.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label fx:id="button_maintnance_resid" alignment="CENTER_RIGHT" contentDisplay="RIGHT" onMouseClicked="#handleButtonClick" onMousePressed="#handleButtonClick" prefHeight="52.0" prefWidth="152.0" styleClass="label_element" text=" إدارة الصيانة" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@engineering_96px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" onMouseClicked="#handleButtonClick" onMousePressed="#handleButtonClick" prefHeight="52.0" prefWidth="152.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Label>
+            <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" onMouseClicked="#handleButtonClick" onMousePressed="#handleButtonClick" prefHeight="52.0" prefWidth="152.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Label>
+            <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" onMouseClicked="#handleButtonClick" onMousePressed="#handleButtonClick" prefHeight="52.0" prefWidth="152.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Label>
+            <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" onMouseClicked="#handleButtonClick" onMousePressed="#handleButtonClick" prefHeight="52.0" prefWidth="152.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Label>
+            <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" onMouseClicked="#handleButtonClick" onMousePressed="#handleButtonClick" prefHeight="52.0" prefWidth="152.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Label>
+            <Label fx:id="button_sing_out" alignment="CENTER_RIGHT" contentDisplay="RIGHT" onMouseClicked="#sing_out" prefHeight="52.0" prefWidth="152.0" styleClass="label_element" text="تسجيل الخروج" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons8_logout.png_32.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+         </children>
+      </VBox>
+   </right>
+   <center>
+      <StackPane prefHeight="641.0" prefWidth="770.0" styleClass="center_pane" stylesheets="@application_design.css" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane fx:id="AnchorPane1" prefHeight="638.0" prefWidth="768.0" styleClass="center_pane" stylesheets="@application_design.css">
+               <children>
+                  <ScrollPane fx:id="scroll1" hvalue="1.0" layoutX="24.0" layoutY="184.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="435.0" prefWidth="721.0" AnchorPane.bottomAnchor="26.0" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="23.0" AnchorPane.topAnchor="184.0">
+                     <content>
+                        <AnchorPane nodeOrientation="RIGHT_TO_LEFT" prefHeight="700.0" prefWidth="1550.0" styleClass="scroll-pane">
+                           <children>
+                              <TableView fx:id="table_student" layoutX="-47.0" layoutY="2.0" nodeOrientation="RIGHT_TO_LEFT" onMouseClicked="#Handle_clicke_mouse3" prefHeight="200.0" prefWidth="200.0" stylesheets="@application_design.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <columns>
+                                    <TableColumn fx:id="ID_student" prefWidth="142.0" resizable="false" text="الرقم التسلسلي" />
+                                  <TableColumn fx:id="Name_student" prefWidth="75.0" resizable="false" text="الاسم" />
+                                  <TableColumn fx:id="last_name_student" prefWidth="75.0" resizable="false" text="اللقب" />
+                                    <TableColumn fx:id="date_birth_student" prefWidth="75.0" resizable="false" text="تاريخ الميلاد" />
+                                    <TableColumn fx:id="palce_birth_student" prefWidth="75.0" resizable="false" text="مكان الميلاد" />
+                                    <TableColumn fx:id="nat_student" prefWidth="75.0" resizable="false" text="الجنسية" />
+                                    <TableColumn fx:id="Num_bac" prefWidth="142.0" resizable="false" text="رقم شهادة البكالوريا" />
+                                    <TableColumn fx:id="year_bac" prefWidth="142.0" resizable="false" text="تاريخ الحصول على بكالوريا" />
+                                    <TableColumn fx:id="State_student" prefWidth="75.0" resizable="false" text="الولاية" />
+                                    <TableColumn fx:id="address_student" prefWidth="75.0" resizable="false" text="مكان السكن" />
+                                    <TableColumn fx:id="spec_student" prefWidth="100.0" text="التخصص" />
+                                    <TableColumn fx:id="Branch_student" prefWidth="100.0" text="الفرع" />
+                                    <TableColumn fx:id="level_student" prefWidth="75.0" text="المستوى" />
+                                    <TableColumn fx:id="name_mom" prefWidth="75.0" text="اسم الأم" />
+                                    <TableColumn fx:id="last_name_mom" prefWidth="75.0" text="لقب الأم" />
+                                    <TableColumn fx:id="name_dad" prefWidth="75.0" text="إسم الاب" />
+                                    <TableColumn fx:id="last_name_dad" prefWidth="75.0" text="لقب الاب" />
+                                    <TableColumn fx:id="school_student" prefWidth="180.0" text="رقم الشهادة المدرسية" />
+                                    <TableColumn fx:id="nember_room" prefWidth="75.0" text="رقم الغرفة" />
+                                </columns>
+                                 <contextMenu>
+                                    <ContextMenu>
+                                      <items>
+                                        <MenuItem mnemonicParsing="false" onAction="#HandleoneAction" text="إظهار معلومات الطالب" />
+                                      </items>
+                                    </ContextMenu>
+                                 </contextMenu>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </ScrollPane>
+                  <TabPane fx:id="myTabPane" layoutX="2.0" layoutY="-1.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="139.0" prefWidth="769.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-1.0">
+                    <tabs>
+                      <Tab text="الرئسية">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="108.0" prefWidth="773.0">
+                                 <children>
+                                    <Label prefHeight="109.0" prefWidth="189.0" styleClass="label_data_base" AnchorPane.leftAnchor="0.0" />
+                                    <ComboBox fx:id="combo1" layoutX="7.0" layoutY="27.0" onAction="#HandleOnAction" prefHeight="25.0" prefWidth="153.0" AnchorPane.leftAnchor="7.0" />
+                                    <Label layoutX="6.0" layoutY="2.0" prefHeight="25.0" prefWidth="140.0" text="إختر السنة الجامعية:">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Button contentDisplay="BOTTOM" layoutX="189.0" mnemonicParsing="false" onMouseClicked="#Handle_clicke_mouse7" prefHeight="108.0" prefWidth="111.0" styleClass="botton_update" text="تحديث" AnchorPane.leftAnchor="189.0">
+                                       <graphic>
+                                          <ImageView fitHeight="48.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" styleClass="botton_update">
+                                             <image>
+                                                <Image url="@available_updates_52px.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <font>
+                                          <Font name="System Bold" size="20.0" />
+                                       </font>
+                                    </Button>
+                                    <Label alignment="CENTER" layoutX="299.0" layoutY="-1.0" prefHeight="63.0" prefWidth="129.0" styleClass="label_data_base" text="عدد الطلاب:" AnchorPane.leftAnchor="299.0">
+                                       <font>
+                                          <Font size="19.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="num_student" alignment="CENTER" layoutX="299.0" layoutY="62.0" prefHeight="46.0" prefWidth="129.0" styleClass="label_data_base" text="0" textFill="#21eb0e" AnchorPane.leftAnchor="299.0">
+                                       <font>
+                                          <Font name="System Bold" size="30.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="serche_room_student" alignment="TOP_LEFT" focusTraversable="false" layoutX="429.0" layoutY="7.0" prefHeight="30.0" prefWidth="188.0" promptText="بحث عن طريق غرفة" styleClass="text_search" AnchorPane.leftAnchor="429.0" />
+                                    <TextField fx:id="serche_block_student" alignment="TOP_LEFT" focusTraversable="false" layoutX="429.0" layoutY="40.0" prefHeight="30.0" prefWidth="188.0" promptText="بحث عن طريق جناح" styleClass="text_search" />
+                                    <Button layoutX="585.0" layoutY="41.0" mnemonicParsing="false" onMouseClicked="#Handle_clicke_mouse11" prefHeight="28.0" prefWidth="24.0" styleClass="button_search">
+                                       <graphic>
+                                          <ImageView fitHeight="20.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@search_500px.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button layoutX="584.0" layoutY="7.0" mnemonicParsing="false" onMouseClicked="#Handle_clicke_mouse10" prefHeight="29.0" prefWidth="35.0" styleClass="button_search" AnchorPane.leftAnchor="584.0">
+                                       <graphic>
+                                          <ImageView fitHeight="20.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@search_500px.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <TextField fx:id="serche_ID_student" alignment="TOP_LEFT" focusTraversable="false" layoutX="430.0" layoutY="74.0" prefHeight="30.0" prefWidth="188.0" promptText="بحث بالرقم التسلسلي" styleClass="text_search" />
+                                    <Button layoutX="582.0" layoutY="74.0" mnemonicParsing="false" onMouseClicked="#Handle_clicke_mouse12" prefHeight="28.0" prefWidth="24.0" styleClass="button_search">
+                                       <graphic>
+                                          <ImageView fitHeight="20.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@search_500px.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <AnchorPane fx:id="anchoer_image3" layoutX="653.0" layoutY="4.0" prefHeight="100.0" prefWidth="100.0" styleClass="label_photo">
+                                       <children>
+                                          <ImageView fx:id="photo_student3" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" styleClass="label_photo" visible="false" />
+                                          <Rectangle fx:id="clip3" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="100.0" nodeOrientation="LEFT_TO_RIGHT" stroke="BLACK" strokeType="INSIDE" styleClass="Rectangle" width="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </Tab>
+                    </tabs>
+                  </TabPane>
+                  <TextField fx:id="serche_name" alignment="TOP_RIGHT" layoutX="400.0" layoutY="149.0" prefHeight="30.0" prefWidth="201.0" promptText="بحث عن طريق الاسم" styleClass="text_search" stylesheets="@application_design.css" AnchorPane.rightAnchor="29.0" />
+                  <Button fx:id="workers_table" alignment="TOP_RIGHT" layoutX="31.0" layoutY="149.0" mnemonicParsing="false" onMouseClicked="#worker_tableOnMouseClicked" prefHeight="30.0" prefWidth="139.0" styleClass="button_work" text="جدول العمال">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="34.0" fitWidth="47.0" layoutX="31.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@arrow_pointing_left_52px.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="schere1" layoutX="400.0" layoutY="150.0" mnemonicParsing="false" onMouseClicked="#mouseClicked4" prefHeight="28.0" prefWidth="24.0" styleClass="button_search" AnchorPane.rightAnchor="193.0">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@search_500px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="AnchorPane2" prefHeight="664.0" prefWidth="630.0" styleClass="center_pane" stylesheets="@application_design.css" visible="false">
+               <children>
+                  <ScrollPane fx:id="scroll2" hvalue="1.0" layoutX="24.0" layoutY="184.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="435.0" prefWidth="721.0" AnchorPane.bottomAnchor="28.0" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="23.0" AnchorPane.topAnchor="184.0">
+                     <content>
+                        <AnchorPane prefHeight="700.0" prefWidth="800.0" styleClass="scroll-pane">
+                           <children>
+                              <TableView fx:id="table_worker" layoutX="8.0" layoutY="7.0" nodeOrientation="RIGHT_TO_LEFT" onMouseClicked="#Handle_clicke_mouse4" prefHeight="200.0" prefWidth="200.0" stylesheets="@application_design.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <columns>
+                                    <TableColumn fx:id="Nat_id_card" prefWidth="142.0" resizable="false" text="رقم بطاقة التعريف" />
+                                    <TableColumn fx:id="worker_name" prefWidth="75.0" resizable="false" text="الاسم" />
+                                    <TableColumn fx:id="worker_last_name" prefWidth="75.0" resizable="false" text="اللقب" />
+                                    <TableColumn fx:id="date_of_birthe_worker" prefWidth="75.0" resizable="false" text="تاريخ الميلاد" />
+                                    <TableColumn fx:id="place_birth_worker" prefWidth="75.0" resizable="false" text="مكان الميلاد" />
+                                    <TableColumn fx:id="address_worker1" prefWidth="142.0" resizable="false" text="الولاية" />
+                                    <TableColumn fx:id="address_worker" prefWidth="142.0" resizable="false" text="مكان السكن" />
+                                    <TableColumn fx:id="nat" prefWidth="75.0" resizable="false" text="الجنسية" />
+                                    <TableColumn fx:id="rom_number_worker" prefWidth="142.0" resizable="false" text="رقم الغرفة" />
+                                 </columns>
+                                 <contextMenu>
+                                    <ContextMenu>
+                                      <items>
+                                        <MenuItem mnemonicParsing="false" text="إظهار معلومات العامل" />
+                                      </items>
+                                    </ContextMenu>
+                                 </contextMenu>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </ScrollPane>
+                  <TabPane layoutX="-1.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="138.0" prefWidth="632.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="-1.0">
+                     <tabs>
+                        <Tab closable="false" text="الرئسية">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="93.0" prefWidth="630.0">
+                                 <children>
+                                    <Label prefHeight="109.0" prefWidth="189.0" styleClass="label_data_base" />
+                                    <ComboBox fx:id="combo2" layoutX="7.0" layoutY="27.0" onAction="#HandleOnAction2" prefHeight="25.0" prefWidth="153.0" />
+                                    <Label layoutX="6.0" layoutY="2.0" prefHeight="25.0" prefWidth="140.0" text="إختر السنة الدراسية:">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Button contentDisplay="BOTTOM" layoutX="189.0" mnemonicParsing="false" onMouseClicked="#Handle_clicke_mouse6" prefHeight="108.0" prefWidth="111.0" styleClass="botton_update" text="تحديث">
+                                       <graphic>
+                                          <ImageView fitHeight="48.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" styleClass="botton_update">
+                                             <image>
+                                                <Image url="@available_updates_52px.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <font>
+                                          <Font name="System Bold" size="20.0" />
+                                       </font>
+                                    </Button>
+                                    <Label alignment="CENTER" layoutX="299.0" layoutY="-1.0" prefHeight="63.0" prefWidth="129.0" styleClass="label_data_base" text="عدد العمال:">
+                                       <font>
+                                          <Font size="19.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="number_worker_in" alignment="CENTER" layoutX="299.0" layoutY="62.0" prefHeight="46.0" prefWidth="129.0" styleClass="label_data_base" text="0" textFill="#21eb0e">
+                                       <font>
+                                          <Font name="System Bold" size="30.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="serche_room_worker" alignment="TOP_LEFT" layoutX="431.0" layoutY="7.0" prefHeight="30.0" prefWidth="188.0" promptText="بحث عن طريق غرفة" styleClass="text_search" />
+                                    <TextField fx:id="serche_ID_worker" alignment="TOP_LEFT" layoutX="432.0" layoutY="73.0" prefHeight="30.0" prefWidth="188.0" promptText="بحث برقم التعريف" styleClass="text_search" />
+                                    <TextField fx:id="serche_block_worker" alignment="TOP_LEFT" layoutX="431.0" layoutY="40.0" prefHeight="30.0" prefWidth="189.0" promptText="بحث عن طريق جناح" styleClass="text_search" />
+                                    <Button layoutX="585.0" layoutY="7.0" mnemonicParsing="false" onMouseClicked="#Handle_clicke_mouse13" prefHeight="28.0" prefWidth="24.0" styleClass="button_search">
+                                       <graphic>
+                                          <ImageView fitHeight="20.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@search_500px.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button layoutX="585.0" layoutY="40.0" mnemonicParsing="false" onMouseClicked="#Handle_clicke_mouse14" prefHeight="29.0" prefWidth="35.0" styleClass="button_search">
+                                       <graphic>
+                                          <ImageView fitHeight="20.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@search_500px.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button layoutX="585.0" layoutY="73.0" mnemonicParsing="false" onMouseClicked="#Handle_clicke_mouse15" prefHeight="28.0" prefWidth="24.0" styleClass="button_search">
+                                       <graphic>
+                                          <ImageView fitHeight="20.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@search_500px.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <AnchorPane fx:id="anchoer_image31" layoutX="653.0" layoutY="4.0" prefHeight="100.0" prefWidth="100.0" styleClass="label_photo">
+                                       <children>
+                                          <ImageView fx:id="photo_student31" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" styleClass="label_photo" visible="false" />
+                                          <Rectangle fx:id="clip31" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="100.0" stroke="BLACK" strokeType="INSIDE" styleClass="Rectangle" width="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                     </tabs>
+                  </TabPane>
+                  <TextField fx:id="serche_name_worker" alignment="TOP_RIGHT" layoutX="400.0" layoutY="149.0" prefHeight="30.0" prefWidth="201.0" promptText="بحث عن طريق الاسم" styleClass="text_search" stylesheets="@application_design.css" AnchorPane.rightAnchor="29.0" />
+                  <Button fx:id="student_table" alignment="TOP_RIGHT" layoutX="31.0" layoutY="149.0" mnemonicParsing="false" onMouseClicked="#student_tableOnMouseClicked" prefHeight="30.0" prefWidth="139.0" styleClass="button_work" text="جدول الطلبة">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="34.0" fitWidth="47.0" layoutX="31.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@arrow_52px.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="538.0" layoutY="150.0" mnemonicParsing="false" onMouseClicked="#Handle_clicke_mouse8" prefHeight="28.0" prefWidth="24.0" styleClass="button_search">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@search_500px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="AnchorPane9" prefHeight="664.0" prefWidth="630.0" styleClass="center_pane" stylesheets="@application_design.css" visible="false">
+               <children>
+                  <Button fx:id="page_archive_worker" alignment="TOP_RIGHT" layoutX="31.0" layoutY="149.0" mnemonicParsing="false" onMouseClicked="#handleButtonClick" prefHeight="31.0" prefWidth="198.0" styleClass="button_work" text="أرشيف العمال               ">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@arrow_pointing_left_52px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <AnchorPane layoutX="315.0" layoutY="69.0" prefHeight="111.0" prefWidth="282.0" styleClass="AnchorPane" AnchorPane.rightAnchor="31.0">
+                     <children>
+                        <TextField fx:id="ID_student_Ab" alignment="TOP_RIGHT" focusTraversable="false" layoutX="41.0" layoutY="17.0" prefHeight="30.0" prefWidth="201.0" promptText="بحث بالرقم التسلسلي" styleClass="text_search" />
+                        <TextField fx:id="ID_student_Ab_name" alignment="TOP_RIGHT" focusTraversable="false" layoutX="41.0" layoutY="60.0" prefHeight="30.0" prefWidth="201.0" promptText="بحث عن طريق الاسم" styleClass="text_search" stylesheets="@application_design.css" />
+                        <Button layoutX="41.0" layoutY="32.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="24.0" styleClass="button_search" />
+                        <Button layoutX="40.0" layoutY="61.0" mnemonicParsing="false" onAction="#scherch_st_ab_name" prefHeight="28.0" prefWidth="24.0" styleClass="button_search">
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@search_500px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button layoutX="40.0" layoutY="18.0" mnemonicParsing="false" onAction="#scherch_st_ab" prefHeight="28.0" prefWidth="24.0" styleClass="button_search">
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@search_500px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <Button fx:id="page_archive_excluded_students" alignment="TOP_RIGHT" layoutX="31.0" layoutY="109.0" mnemonicParsing="false" onMouseClicked="#handleButtonClick" prefHeight="31.0" prefWidth="198.0" styleClass="button_work" text="أرشيف الطلبة المقصون">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@arrow_pointing_left_52px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <AnchorPane layoutX="114.0" layoutY="183.0" prefHeight="440.0" prefWidth="651.0" styleClass="scroll-pane">
+                     <children>
+                        <TableView fx:id="table_student_archive" layoutX="4.0" layoutY="4.0" nodeOrientation="RIGHT_TO_LEFT" onMouseClicked="#Handle_mouse3" prefHeight="436.0" prefWidth="650.0" styleClass="AnchorPane" stylesheets="@application_design.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="2.0">
+                           <columns>
+                              <TableColumn fx:id="ID_student_archive" prefWidth="142.0" text="الرقم التسلسلي" />
+                              <TableColumn fx:id="Name_student_archive" prefWidth="75.0" text="الاسم" />
+                              <TableColumn fx:id="last_name_student_archive" prefWidth="75.0" text="اللقب" />
+                              <TableColumn fx:id="year_of_ab_St" prefWidth="100.0" text="تاريخ التبرئة" />
+                              <TableColumn fx:id="re_ab_st" prefWidth="120.0" text="سبب التبرئة" />
+                              <TableColumn fx:id="room_ab_st" prefWidth="120.0" text="رقم الغرفة" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+                  <Button fx:id="page_ex_worker" alignment="TOP_RIGHT" layoutX="31.0" layoutY="69.0" mnemonicParsing="false" onAction="#Work_ex" prefHeight="31.0" prefWidth="198.0" styleClass="button_work" text="أرشيف العمال المقصون">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@arrow_pointing_left_52px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="page_ex_worker1" alignment="CENTER" layoutX="607.0" layoutY="23.0" mnemonicParsing="false" onAction="#clean_ab_st" prefHeight="37.0" prefWidth="198.0" styleClass="button_work" text="تحديث">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="26.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@available_updates_52px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <AnchorPane fx:id="anchoer_image41" layoutX="363.0" layoutY="21.0" prefHeight="157.0" prefWidth="152.0" styleClass="label_photo">
+                     <children>
+                        <ImageView fx:id="photo_student12" fitHeight="160.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" styleClass="label_photo" visible="false" />
+                        <Rectangle fx:id="clip41" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="160.0" stroke="BLACK" strokeType="INSIDE" styleClass="Rectangle" width="150.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="AnchorPane10" prefHeight="664.0" prefWidth="630.0" styleClass="center_pane" stylesheets="@application_design.css" visible="false">
+               <children>
+                  <ScrollPane layoutX="145.0" layoutY="187.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="217.0" prefWidth="515.0" AnchorPane.bottomAnchor="242.0" AnchorPane.leftAnchor="145.0" AnchorPane.rightAnchor="218.0" AnchorPane.topAnchor="187.0">
+                     <content>
+                        <AnchorPane prefHeight="707.0" prefWidth="498.0" styleClass="scroll-pane">
+                           <children>
+                              <TableView fx:id="table_exlusion_archive" layoutX="8.0" layoutY="7.0" nodeOrientation="RIGHT_TO_LEFT" onMouseClicked="#Handle_mouse6" prefHeight="200.0" prefWidth="200.0" styleClass="AnchorPane" stylesheets="@application_design.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <columns>
+                                    <TableColumn fx:id="ID_student_exlusion_archive" prefWidth="142.0" text="الرقم التسلسلي" />
+                                    <TableColumn fx:id="Name_student_exlusion_archive" prefWidth="75.0" text="الاسم" />
+                                    <TableColumn fx:id="last_name_student_exlusion_archive" prefWidth="75.0" text="اللقب" />
+                                    <TableColumn fx:id="date_exlusion_archive" prefWidth="100.0" text="تاريخ الاقصاء" />
+                                    <TableColumn fx:id="room_exlusion_archive" prefWidth="100.0" text="الغرفة" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </ScrollPane>
+                  <Button fx:id="page_archive_students1" alignment="TOP_RIGHT" layoutX="45.0" layoutY="44.0" mnemonicParsing="false" onMouseClicked="#handleButtonClick" prefHeight="31.0" prefWidth="198.0" styleClass="button_work" text="أرشيف الطلبة">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="34.0" fitWidth="47.0" layoutX="45.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@arrow_52px.png" />
+                     </image>
+                  </ImageView>
+                  <AnchorPane layoutX="565.0" layoutY="51.0" prefHeight="119.0" prefWidth="282.0" styleClass="AnchorPane" AnchorPane.rightAnchor="31.0">
+                     <children>
+                        <TextField fx:id="ST_id_Ex" alignment="TOP_RIGHT" focusTraversable="false" layoutX="41.0" layoutY="17.0" prefHeight="30.0" prefWidth="201.0" promptText="بحث بالرقم التسلسلي" styleClass="text_search" />
+                        <Button layoutX="41.0" layoutY="32.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="24.0" styleClass="button_search" />
+                        <Button layoutX="40.0" layoutY="61.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="24.0" styleClass="button_search" />
+                        <Button layoutX="40.0" layoutY="18.0" mnemonicParsing="false" onAction="#St_id_ex_sh" prefHeight="28.0" prefWidth="24.0" styleClass="button_search">
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@search_500px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <TextField fx:id="ST_name_EX" alignment="TOP_RIGHT" focusTraversable="false" layoutX="41.0" layoutY="60.0" prefHeight="30.0" prefWidth="201.0" promptText="بحث عن طريق الاسم" styleClass="text_search" stylesheets="@application_design.css" />
+                        <Button layoutX="40.0" layoutY="61.0" mnemonicParsing="false" onAction="#St_ex_name_sh" prefHeight="28.0" prefWidth="24.0" styleClass="button_search">
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@search_500px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="69.0" layoutY="417.0" prefHeight="188.0" prefWidth="510.0" AnchorPane.rightAnchor="220.0">
+                     <children>
+                        <Label fx:id="re_stud_ex" alignment="TOP_RIGHT" layoutX="203.0" layoutY="71.0" nodeOrientation="LEFT_TO_RIGHT" styleClass="text_label_ex" stylesheets="@application_design.css" text="سبب الاقصاء" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="anchoer_image4" layoutX="326.0" layoutY="19.0" prefHeight="157.0" prefWidth="152.0" styleClass="label_photo">
+                     <children>
+                        <ImageView fx:id="photo_student1" fitHeight="160.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" styleClass="label_photo" visible="false" />
+                        <Rectangle fx:id="clip4" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="160.0" stroke="BLACK" strokeType="INSIDE" styleClass="Rectangle" width="150.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                  <Button alignment="CENTER" layoutX="607.0" layoutY="10.0" mnemonicParsing="false" onAction="#clean_ex_st_Element" prefHeight="35.0" prefWidth="198.0" styleClass="button_work" text="تحديث">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@available_updates_52px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="AnchorPane11" prefHeight="664.0" prefWidth="630.0" styleClass="center_pane" stylesheets="@application_design.css" visible="false">
+               <children>
+                  <AnchorPane layoutX="147.0" layoutY="207.0" maxHeight="1.7976931348623157E308" maxWidth="971.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="400.0" prefWidth="622.0" styleClass="AnchorPane3">
+                     <children>
+                        <TableView fx:id="table_worker_archive" layoutX="7.0" layoutY="1.0" maxHeight="735.0" maxWidth="971.0" nodeOrientation="RIGHT_TO_LEFT" onMouseClicked="#Handle_mouse4" prefHeight="735.0" prefWidth="971.0" styleClass="AnchorPane" stylesheets="@application_design.css" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="-3.0" AnchorPane.topAnchor="1.0">
+                           <columns>
+                              <TableColumn fx:id="Nat_id_card_archive" prefWidth="142.0" text="رقم بطاقة التعريف الوطني" />
+                              <TableColumn fx:id="worker_name_archive" prefWidth="75.0" text="الاسم" />
+                              <TableColumn fx:id="worker_last_name_archive" prefWidth="75.0" text="اللقب" />
+                              <TableColumn fx:id="type_w_archive" prefWidth="120.0" text="سبب التبرئة" />
+                              <TableColumn fx:id="date_ab_w_archive" prefWidth="100.0" text="تاريخ التبرئة" />
+                              <TableColumn fx:id="room_ab_w_archive" prefWidth="100.0" text="الغرفة" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+                  <Button fx:id="page_archive_students2" alignment="TOP_RIGHT" contentDisplay="RIGHT" layoutX="31.0" layoutY="149.0" mnemonicParsing="false" onMouseClicked="#handleButtonClick" prefHeight="31.0" prefWidth="132.0" styleClass="button_work" text="أرشيف الطلبة" AnchorPane.rightAnchor="605.0">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="34.0" fitWidth="30.0" layoutX="31.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="707.0">
+                     <image>
+                        <Image url="@arrow_52px.png" />
+                     </image>
+                  </ImageView>
+                  <AnchorPane layoutX="318.0" layoutY="69.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="111.0" prefWidth="280.0" styleClass="AnchorPane" AnchorPane.rightAnchor="27.0">
+                     <children>
+                        <TextField fx:id="ID_Wo_Ab" alignment="TOP_RIGHT" focusTraversable="false" layoutX="41.0" layoutY="17.0" prefHeight="30.0" prefWidth="240.0" promptText="بحث برقم بطاقة التعريف الوطني" styleClass="text_search" />
+                        <TextField fx:id="Nam_wor_ab" alignment="TOP_RIGHT" focusTraversable="false" layoutX="41.0" layoutY="60.0" prefHeight="30.0" prefWidth="240.0" promptText="بحث عن طريق الاسم" styleClass="text_search" stylesheets="@application_design.css" AnchorPane.rightAnchor="2.0" />
+                        <Button layoutX="41.0" layoutY="32.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="24.0" styleClass="button_search" />
+                        <Button layoutX="40.0" layoutY="61.0" mnemonicParsing="false" onAction="#sh_workers_ab2" prefHeight="28.0" prefWidth="24.0" styleClass="button_search">
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@search_500px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button layoutX="40.0" layoutY="18.0" mnemonicParsing="false" onAction="#sh_workers_ab" prefHeight="28.0" prefWidth="24.0" styleClass="button_search">
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@search_500px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="anchoer_image42" layoutX="382.0" layoutY="24.0" prefHeight="157.0" prefWidth="152.0" styleClass="label_photo">
+                     <children>
+                        <ImageView fx:id="photo_student13" fitHeight="160.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" styleClass="label_photo" visible="false" />
+                        <Rectangle fx:id="clip42" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="160.0" stroke="BLACK" strokeType="INSIDE" styleClass="Rectangle" width="150.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                  <Button alignment="TOP_RIGHT" contentDisplay="RIGHT" layoutX="644.0" layoutY="30.0" mnemonicParsing="false" onAction="#clean_worker_ab" prefHeight="31.0" prefWidth="132.0" styleClass="button_work" text="تحديث">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="34.0" fitWidth="30.0" layoutX="651.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@available_updates_52px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="AnchorPane111" prefHeight="664.0" prefWidth="630.0" styleClass="center_pane" stylesheets="@application_design.css" visible="false">
+               <children>
+                  <AnchorPane layoutX="213.0" layoutY="197.0" maxHeight="1.7976931348623157E308" maxWidth="971.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="262.0" prefWidth="507.0" styleClass="AnchorPane3">
+                     <children>
+                        <TableView fx:id="table_worker_ex" layoutX="7.0" layoutY="1.0" maxHeight="735.0" maxWidth="971.0" nodeOrientation="RIGHT_TO_LEFT" onMouseClicked="#Handle_mouse5" prefHeight="735.0" prefWidth="971.0" styleClass="AnchorPane" stylesheets="@application_design.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <columns>
+                              <TableColumn fx:id="Nat_id_card_ex" prefWidth="142.0" text="رقم بطاقة التعريف الوطني" />
+                              <TableColumn fx:id="worker_name_ex" prefWidth="75.0" text="الاسم" />
+                              <TableColumn fx:id="worker_last_name_ex" prefWidth="75.0" text="اللقب" />
+                              <TableColumn fx:id="date_ab_w_ex" prefWidth="100.0" text="تاريخ الاقصاء" />
+                              <TableColumn fx:id="room_ab_w_ex" prefWidth="100.0" text="رقم الغرفة" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+                  <Button fx:id="page_archive_students21" alignment="TOP_RIGHT" layoutX="105.0" layoutY="20.0" mnemonicParsing="false" onAction="#Workers_ex" prefHeight="40.0" prefWidth="153.0" styleClass="button_work" text="أرشيف الطلبة" AnchorPane.rightAnchor="620.0">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="34.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@arrow_52px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <AnchorPane layoutX="318.0" layoutY="69.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="111.0" prefWidth="280.0" styleClass="AnchorPane" AnchorPane.rightAnchor="27.0">
+                     <children>
+                        <TextField fx:id="ID_Worker_ex_ar" alignment="TOP_RIGHT" focusTraversable="false" layoutX="41.0" layoutY="17.0" prefHeight="30.0" prefWidth="240.0" promptText="بحث برقم بطاقة التعريف الوطني" styleClass="text_search" />
+                        <TextField fx:id="name_Worker_ex_ar" alignment="TOP_RIGHT" focusTraversable="false" layoutX="41.0" layoutY="60.0" prefHeight="30.0" prefWidth="240.0" promptText="بحث عن طريق الاسم" styleClass="text_search" stylesheets="@application_design.css" AnchorPane.rightAnchor="2.0" />
+                        <Button layoutX="41.0" layoutY="32.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="24.0" styleClass="button_search" />
+                        <Button layoutX="40.0" layoutY="61.0" mnemonicParsing="false" onAction="#sherche_worker_ex_by_name" prefHeight="28.0" prefWidth="24.0" styleClass="button_search">
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@search_500px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button layoutX="40.0" layoutY="18.0" mnemonicParsing="false" onAction="#sherche_worker_ex_by_ID" prefHeight="28.0" prefWidth="24.0" styleClass="button_search">
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@search_500px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <Label fx:id="res_work_ex" alignment="TOP_RIGHT" layoutX="211.0" layoutY="480.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="148.0" prefWidth="507.0" styleClass="text_label_ex" text="سبب الاقصاء">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="389.0" layoutY="14.0" prefHeight="159.0" prefWidth="130.0">
+                     <children>
+                        <Rectangle fx:id="clip61" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="161.0" layoutX="5.0" layoutY="23.0" stroke="BLACK" strokeType="INSIDE" styleClass="Rectangle" width="130.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                        <ImageView fx:id="image_v11" fitHeight="150.0" fitWidth="129.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+                     </children>
+                  </AnchorPane>
+                  <Button fx:id="page_ex_worker11" alignment="CENTER" layoutX="642.0" layoutY="21.0" mnemonicParsing="false" onAction="#clean_ex_worker_Element" prefHeight="37.0" prefWidth="198.0" styleClass="button_work" text="تحديث">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="26.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@available_updates_52px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="AnchorPane12" prefHeight="664.0" prefWidth="630.0" styleClass="center_pane" stylesheets="@application_design.css" visible="false">
+               <children>
+                  <AnchorPane layoutX="209.0" layoutY="93.0" prefHeight="532.0" prefWidth="461.0" styleClass="AnchorPane">
+                     <children>
+                        <Button fx:id="Save_maintenance_request" layoutX="82.0" layoutY="474.0" mnemonicParsing="false" onAction="#add_maintenance_requested" prefHeight="38.0" prefWidth="123.0" text="حفظ">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </Button>
+                        <ComboBox fx:id="ch_req" focusTraversable="false" layoutX="190.0" layoutY="39.0" nodeOrientation="RIGHT_TO_LEFT" onAction="#sh_per_req" prefHeight="25.0" prefWidth="209.0" promptText="إختر: طالب / عامل" styleClass="text_label" />
+                        <TextField fx:id="st_id_req" alignment="CENTER_RIGHT" disable="true" focusTraversable="false" layoutX="189.0" layoutY="85.0" prefHeight="30.0" prefWidth="211.0" promptText="رقم التسلسلي" styleClass="text_search" />
+                        <TextField fx:id="Nat_ID_req" alignment="CENTER_RIGHT" disable="true" focusTraversable="false" layoutX="189.0" layoutY="136.0" prefHeight="30.0" prefWidth="211.0" promptText="رقم التعريف" styleClass="text_search" />
+                        <TextArea fx:id="request" focusTraversable="false" layoutX="35.0" layoutY="363.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="102.0" prefWidth="364.0" promptText="كتابة الطلب" styleClass="text_label_combobox" />
+                        <Button fx:id="Save_maintenance_request1" layoutX="233.0" layoutY="474.0" mnemonicParsing="false" onAction="#Action_clean_panel_request_manit" prefHeight="38.0" prefWidth="123.0" text="مسح">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </Button>
+                        <TextField fx:id="date_req" alignment="CENTER_RIGHT" focusTraversable="false" layoutX="189.0" layoutY="312.0" prefHeight="30.0" prefWidth="211.0" promptText="تاريخ الطلب" styleClass="text_search" />
+                        <Label fx:id="name_req" alignment="TOP_RIGHT" contentDisplay="RIGHT" layoutX="189.0" layoutY="184.0" prefHeight="30.0" prefWidth="211.0" styleClass="text_label" text="الاسم" />
+                        <Label fx:id="lname_req" alignment="TOP_RIGHT" contentDisplay="RIGHT" layoutX="189.0" layoutY="225.0" prefHeight="30.0" prefWidth="211.0" styleClass="text_label" text="اللقب" />
+                        <Label fx:id="room_req" alignment="TOP_RIGHT" contentDisplay="RIGHT" layoutX="189.0" layoutY="266.0" prefHeight="30.0" prefWidth="211.0" styleClass="text_label" text="الغرفة" />
+                        <Button fx:id="sh_1" disable="true" layoutX="186.0" layoutY="85.0" mnemonicParsing="false" onAction="#sh_persen_st_req" styleClass="button_search">
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@search_500px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="sh_2" disable="true" layoutX="190.0" layoutY="136.0" mnemonicParsing="false" onAction="#sh_persen_worker_req" styleClass="button_search">
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@search_500px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <Button fx:id="page_maintenance_requests_archive" layoutX="14.0" layoutY="32.0" mnemonicParsing="false" onMouseClicked="#handleButtonClick" prefHeight="45.0" prefWidth="193.0" styleClass="button_work" text="ارشيف طلبات الصيانة">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true" styleClass="label_photo">
+                           <image>
+                              <Image url="@arrow_pointing_left_52px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="AnchorPane13" prefHeight="664.0" prefWidth="630.0" styleClass="center_pane" stylesheets="@application_design.css" visible="false">
+               <children>
+                  <ScrollPane layoutX="41.0" layoutY="181.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="210.0" prefWidth="573.0" AnchorPane.bottomAnchor="248.0" AnchorPane.leftAnchor="41.0" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="181.0">
+                     <content>
+                        <AnchorPane prefHeight="700.0" prefWidth="900.0" styleClass="scroll-pane">
+                           <children>
+                              <TableView fx:id="table_maintenance_requests_archive2" layoutX="4.0" layoutY="4.0" nodeOrientation="RIGHT_TO_LEFT" onMouseClicked="#event_table_request1" prefHeight="696.0" prefWidth="695.0" styleClass="AnchorPane" stylesheets="@application_design.css" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="-4.0" AnchorPane.topAnchor="2.0">
+                                 <columns>
+                                    <TableColumn fx:id="idrequested2" prefWidth="100.0" text="رقم الطلب" />
+                                    <TableColumn fx:id="name_maintenance_requests_archive2" prefWidth="75.0" text="الاسم" />
+                                    <TableColumn fx:id="last_name_maintenance_requests_archive2" prefWidth="75.0" text="اللقب" />
+                                    <TableColumn fx:id="ID_Student_maintenance_requests_archive2" prefWidth="142.0" text="الرقم التسلسلي" />
+                                    <TableColumn fx:id="worker_Nat_id_card_number2" prefWidth="142.0" text="رقم بطاقة التعريف" />
+                                    <TableColumn fx:id="date_requested_maintenance_requests_archive2" prefWidth="142.0" text="تاريخ الطلب" />
+                                    <TableColumn fx:id="Room_requst2" prefWidth="75.0" text="رقم الغرفة" />
+                                    <TableColumn fx:id="RequestDescription_archive2" prefWidth="142.0" text="الطلب" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </ScrollPane>
+                  <Button fx:id="page_create_maintenance_request" alignment="TOP_RIGHT" layoutX="31.0" layoutY="40.0" mnemonicParsing="false" onMouseClicked="#handleButtonClick" prefHeight="31.0" prefWidth="198.0" styleClass="button_work" text="إنشاء طلب صيانة      ">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@arrow_52px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <AnchorPane layoutX="456.0" layoutY="40.0" prefHeight="140.0" prefWidth="282.0" styleClass="AnchorPane">
+                     <children>
+                        <TextField fx:id="ID_student_requst" alignment="TOP_RIGHT" focusTraversable="false" layoutX="41.0" layoutY="17.0" prefHeight="30.0" prefWidth="201.0" promptText="بحث بالرقم التسلسلي" styleClass="text_search" />
+                        <TextField fx:id="ID_requst_1" alignment="TOP_RIGHT" focusTraversable="false" layoutX="41.0" layoutY="60.0" prefHeight="30.0" prefWidth="201.0" promptText="بحث برقم الطلب" styleClass="text_search" stylesheets="@application_design.css" />
+                        <Button layoutX="41.0" layoutY="32.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="24.0" styleClass="button_search" />
+                        <Button layoutX="40.0" layoutY="61.0" mnemonicParsing="false" onAction="#sh2" prefHeight="28.0" prefWidth="24.0" styleClass="button_search">
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@search_500px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button layoutX="40.0" layoutY="18.0" mnemonicParsing="false" onAction="#sh1" prefHeight="28.0" prefWidth="24.0" styleClass="button_search">
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@search_500px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <TextField fx:id="Nat_worker_requst_1" alignment="TOP_RIGHT" focusTraversable="false" layoutX="41.0" layoutY="103.0" prefHeight="30.0" prefWidth="201.0" promptText="بحث عن طريق رقم تعريف" styleClass="text_search" stylesheets="@application_design.css" />
+                        <Button layoutX="40.0" layoutY="104.0" mnemonicParsing="false" onAction="#sh3" prefHeight="28.0" prefWidth="24.0" styleClass="button_search">
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@search_500px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <Label fx:id="requst_label" alignment="TOP_RIGHT" layoutX="156.0" layoutY="422.0" prefHeight="177.0" prefWidth="536.0" styleClass="text_label_ex" text="الطلب" />
+                  <Button alignment="TOP_RIGHT" layoutX="31.0" layoutY="94.0" mnemonicParsing="false" onAction="#clean_mant" prefHeight="31.0" prefWidth="198.0" styleClass="button_work" text="تحديث                         ">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@available_updates_52px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </StackPane>
+   </center>
+   <top>
+      <AnchorPane prefHeight="30.0" prefWidth="800.0" styleClass="bordertop" stylesheets="@application_design.css" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="4.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@UAS.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="30.0" layoutY="8.0" />
+            <Label layoutX="30.0" layoutY="8.0" text="University Accommodation Service" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="close" alignment="CENTER" layoutX="768.0" onMouseClicked="#ClickMouse" prefHeight="31.0" prefWidth="36.0" styleClass="exit" text="X" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="minus" layoutX="867.0" minHeight="29.0" mnemonicParsing="false" onMouseClicked="#handleButtonClick" onMousePressed="#handleButtonClick" prefHeight="29.0" prefWidth="37.0" styleClass="button_min" AnchorPane.rightAnchor="36.0" AnchorPane.topAnchor="0.0">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons8_minus_32.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

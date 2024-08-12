@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" styleClass="panel_main" stylesheets="@application_design.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo5.Login_Controller">
+   <children>
+      <AnchorPane prefHeight="500.0" prefWidth="500.0">
+         <children>
+            <Pane layoutX="300.0" layoutY="34.0" prefHeight="409.0" prefWidth="200.0" styleClass="pane" />
+            <ImageView fitHeight="194.0" fitWidth="451.0" layoutX="-16.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logo mimo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="494.0" prefHeight="500.0" prefWidth="300.0">
+         <children>
+            <TextField fx:id="tfUsername" alignment="CENTER_RIGHT" focusTraversable="false" layoutX="30.0" layoutY="185.0" prefHeight="30.0" prefWidth="255.0" promptText="اسم المستخدم او بريد الالكتروني" />
+            <Button fx:id="btnLogin" layoutX="95.0" layoutY="377.0" mnemonicParsing="false" onMouseClicked="#loginClicke" onMousePressed="#loginClicke" prefHeight="25.0" prefWidth="112.0" text="دخول" textFill="#fcf8f8">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Button>
+            <PasswordField fx:id="password_accont" alignment="CENTER_RIGHT" focusTraversable="false" layoutX="30.0" layoutY="288.0" prefHeight="30.0" prefWidth="255.0" promptText="كلمة السر" />
+            <Hyperlink fx:id="frog" layoutX="75.0" layoutY="424.0" onMouseClicked="#MouseClike" text="نسيت كلمة السر">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Hyperlink>
+            <FontAwesomeIcon fill="#0093dd" glyphName="USERS" layoutX="103.0" layoutY="98.0" selectionFill="#0093dd" size="8em" />
+            <Label layoutX="59.0" layoutY="120.0" prefHeight="65.0" prefWidth="190.0" text="تسجيل الدخول" textFill="#0093dd">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Label>
+            <FontAwesomeIcon fill="#0093dd" glyphName="USER" layoutX="32.0" layoutY="208.0" size="1.75em" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="274.0" onMouseClicked="#exit" onMousePressed="#exit" prefHeight="25.0" prefWidth="34.0" styleClass="exit" stylesheets="@application_design.css" text="X " textFill="#fcfcfc" fx:id="x_exit">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Hyperlink fx:id="create_account" layoutX="92.0" layoutY="339.0" onMouseClicked="#MouseClikeLogin" text="إنشاء حساب">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Hyperlink>
+            <TextField fx:id="password_accont1" alignment="CENTER_RIGHT" layoutX="30.0" layoutY="288.0" prefHeight="30.0" prefWidth="255.0" promptText="كلمة السر" visible="false" />
+            <Button fx:id="stet_show_and_hide_button" layoutX="22.0" layoutY="285.0" mnemonicParsing="false" onAction="#initialize" onMouseClicked="#handleButtonClick" prefHeight="36.0" prefWidth="17.0" styleClass="button_password_hide_and_show">
+               <graphic>
+                  <ImageView fx:id="show_and_hide_image" fitHeight="21.0" fitWidth="21.0" onMouseClicked="#togglePasswordVisibility" pickOnBounds="true" preserveRatio="true" styleClass="button_password_hide_and_show">
+                     <image>
+                        <Image url="@hide-password-30.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ComboBox fx:id="rool" layoutX="30.0" layoutY="243.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="21.0" prefWidth="255.0" promptText=" دور المستعمل" styleClass="combo_user" stylesheets="@application_design.css" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

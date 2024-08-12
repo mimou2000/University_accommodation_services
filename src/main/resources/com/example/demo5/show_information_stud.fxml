@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane styleClass="AnchorPane5" stylesheets="@application_design.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo5.show_information_stud_controller">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="741.0" styleClass="show_in_Stud_Center" stylesheets="@application_design.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="ID" alignment="CENTER_RIGHT" contentDisplay="TOP" layoutX="493.0" layoutY="228.0" prefHeight="30.0" prefWidth="183.0" styleClass="text_label_sud_wor" />
+            <Label fx:id="name" alignment="CENTER_RIGHT" contentDisplay="TOP" layoutX="493.0" layoutY="289.0" prefHeight="30.0" prefWidth="183.0" styleClass="text_label_sud_wor" />
+            <Label fx:id="last_name" alignment="CENTER_RIGHT" contentDisplay="TOP" layoutX="493.0" layoutY="353.0" prefHeight="30.0" prefWidth="183.0" styleClass="text_label_sud_wor" />
+            <Label fx:id="date_birth" alignment="CENTER_RIGHT" contentDisplay="TOP" layoutX="493.0" layoutY="416.0" prefHeight="30.0" prefWidth="183.0" styleClass="text_label_sud_wor" />
+            <Label fx:id="place_birth" alignment="CENTER_RIGHT" contentDisplay="TOP" layoutX="493.0" layoutY="481.0" prefHeight="30.0" prefWidth="183.0" styleClass="text_label_sud_wor" />
+            <Label fx:id="address" alignment="CENTER_RIGHT" contentDisplay="TOP" layoutX="289.0" layoutY="228.0" prefHeight="30.0" prefWidth="183.0" styleClass="text_label_sud_wor" />
+            <Label fx:id="state" alignment="CENTER_RIGHT" contentDisplay="TOP" layoutX="493.0" layoutY="539.0" prefHeight="30.0" prefWidth="183.0" styleClass="text_label_sud_wor" />
+            <Label fx:id="nat" alignment="CENTER_RIGHT" contentDisplay="TOP" layoutX="289.0" layoutY="289.0" prefHeight="30.0" prefWidth="183.0" styleClass="text_label_sud_wor" />
+            <Label fx:id="level" alignment="CENTER_RIGHT" contentDisplay="TOP" layoutX="289.0" layoutY="481.0" prefHeight="30.0" prefWidth="183.0" styleClass="text_label_sud_wor" />
+            <Label fx:id="name_mom" alignment="CENTER_RIGHT" contentDisplay="TOP" layoutX="289.0" layoutY="539.0" prefHeight="30.0" prefWidth="183.0" styleClass="text_label_sud_wor" />
+            <Label fx:id="last_name_mom" alignment="CENTER_RIGHT" contentDisplay="TOP" layoutX="26.0" layoutY="228.0" prefHeight="30.0" prefWidth="224.0" styleClass="text_label_sud_wor" />
+            <Label fx:id="name_dad" alignment="CENTER_RIGHT" contentDisplay="TOP" layoutX="26.0" layoutY="289.0" prefHeight="30.0" prefWidth="224.0" styleClass="text_label_sud_wor" />
+            <Label fx:id="last_name_dad" alignment="CENTER_RIGHT" contentDisplay="TOP" layoutX="26.0" layoutY="353.0" prefHeight="30.0" prefWidth="224.0" styleClass="text_label_sud_wor" />
+            <Label fx:id="Number_schol" alignment="CENTER_RIGHT" contentDisplay="TOP" layoutX="26.0" layoutY="416.0" prefHeight="30.0" prefWidth="224.0" styleClass="text_label_sud_wor" />
+            <Label fx:id="Number_room" alignment="CENTER_RIGHT" contentDisplay="TOP" layoutX="26.0" layoutY="481.0" prefHeight="30.0" prefWidth="224.0" styleClass="text_label_sud_wor" />
+            <Label fx:id="spic" alignment="CENTER_RIGHT" contentDisplay="TOP" layoutX="289.0" layoutY="353.0" prefHeight="30.0" prefWidth="183.0" styleClass="text_label_sud_wor" />
+            <Label fx:id="branch" alignment="CENTER_RIGHT" contentDisplay="TOP" layoutX="289.0" layoutY="416.0" prefHeight="30.0" prefWidth="183.0" styleClass="text_label_sud_wor" />
+            <Label layoutX="563.0" layoutY="197.0" text="الرقم التسلسلي:">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="634.0" layoutY="261.0" text="الاسم:">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="633.0" layoutY="324.0" text="اللقب:">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="588.0" layoutY="386.0" text="تاريخ الميلاد:">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="589.0" layoutY="447.0" text="مكان الميلاد:">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="631.0" layoutY="511.0" text="الولاية:">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="387.0" layoutY="197.0" text="مكان السكن:">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="408.0" layoutY="261.0" text="الجنسية:">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="402.0" layoutY="324.0" text="التخصص:">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="431.0" layoutY="386.0" text="الفرع:">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="404.0" layoutY="447.0" text="المستوى:">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="406.0" layoutY="511.0" text="إسم الام:">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="182.0" layoutY="197.0" text="لقب الام:">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="182.0" layoutY="261.0" text="إسم الاب:">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="179.0" layoutY="324.0" text="لقب الاب:">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="100.0" layoutY="386.0" text="رقم الشهادة المدرسية">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="175.0" layoutY="447.0" text="رقم الغرفة:">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Rectangle fx:id="cli" arcHeight="5.0" arcWidth="5.0" fill="#f3f4f5" height="141.0" layoutX="530.0" layoutY="56.0" stroke="BLACK" strokeType="INSIDE" styleClass="Rectangle" width="146.0" />
+            <AnchorPane prefHeight="34.0" prefWidth="741.0" styleClass="bordertop1" stylesheets="@application_design.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="23.0" fitWidth="28.0" layoutX="2.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@UAS.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="26.0" layoutY="11.0" text="University Accommodation Service" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="667.0" onMouseClicked="#mouseClicked" prefHeight="32.0" prefWidth="77.0" styleClass="exit" text="x" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

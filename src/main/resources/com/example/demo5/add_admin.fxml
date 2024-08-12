@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="441.0" prefWidth="270.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo5.add_admine_controler">
+   <children>
+      <AnchorPane layoutX="8.0" prefHeight="200.0" prefWidth="200.0" styleClass="panel_main" stylesheets="@application_design.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TextField fx:id="email" alignment="TOP_RIGHT" focusTraversable="false" layoutX="31.0" layoutY="149.0" promptText="البريد الالكتروني" />
+            <PasswordField fx:id="password" alignment="TOP_RIGHT" focusTraversable="false" layoutX="31.0" layoutY="263.0" promptText="كلمة السر" />
+            <TextField fx:id="name_adime" alignment="TOP_RIGHT" focusTraversable="false" layoutX="31.0" layoutY="206.0" promptText="اسم المسؤول" />
+            <TextField fx:id="conform_password" alignment="CENTER_RIGHT" focusTraversable="false" layoutX="31.0" layoutY="320.0" promptText="تأكيد كلمة السر" />
+            <Button layoutX="102.0" layoutY="382.0" mnemonicParsing="false" onAction="#handleSignUp" onMouseClicked="#handleSignUp" text="إنشاء" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <FontAwesomeIcon fill="#0093dd" glyphName="USER" layoutX="98.0" layoutY="122.0" size="8em" />
+            <Label alignment="CENTER" layoutX="243.0" layoutY="-1.0" onMouseClicked="#click" onMousePressed="#click" prefHeight="31.0" prefWidth="27.0" styleClass="exit" text="X" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <TextField fx:id="password_accont1" alignment="TOP_RIGHT" focusTraversable="false" layoutX="31.0" layoutY="263.0" promptText="كلمة السر" visible="false" />
+            <ToggleButton layoutX="31.0" layoutY="261.0" mnemonicParsing="false" onAction="#togglePasswordVisibility" prefHeight="30.0" prefWidth="34.0" styleClass="button_password_hide_and_show">
+               <graphic>
+                  <ImageView fx:id="show_and_hide_image" fitHeight="30.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@hide-password-30.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </ToggleButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
